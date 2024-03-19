@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analisis_Informe_Rickettsiosis_German.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="an%C3%A1lisis-del-informe-epidemiol%C3%B3gico-semanal-de-rickettsiosis-sonora-2024">Análisis del Informe Epidemiológico Semanal de Rickettsiosis, Sonora 2024</h1>
+<h2 id="ideas-generales">Ideas Generales</h2>
+<ul>
+<li>
+<p>Un agrupamiento interesante para ver es identificar, casos y defunciones por indice de marginalización municipal (IMM).</p>
+</li>
+<li>
+<p>Me parece relevante estudiar los casos de FMRR por periodos climatológicos, en particular, las garrapatas suelen preferir un ambiente húmedo, agrupar por municipio o región climatológica y correlacionar con precipitación y nivel de humedad en el ambiente podria arrojar algo interesante, también creo que se podria encontrar alguna periodicidad que podria evidenciar estacionalización en los casos (o incluso las defunciones).</p>
+</li>
+<li>
+<p>Otro indicador interesante podria ser buscar una correlación entre la densidad poblacional y los casos de FMRR, en este caso es importante normalizar los datos ya que es esperable una mayor cantidad de casos en una pobalción mayor.</p>
+</li>
+</ul>
+<h2 id="casos-por-entidad-federativa-2da-p%C3%A1gina-del-reporte">Casos por Entidad Federativa (2da Página del Reporte)</h2>
+<ul>
+<li>
+<p>Veo beneficioso mostrar casos en semanas anteriores y mostrar los casos en esta semana de años anteriores.</p>
+</li>
+<li>
+<p>Podria mostrarse la diferencia entre la incidencia en esta semana en este año y años anteriores para identificar incrementos o decrementos imprevistos.</p>
+</li>
+</ul>
+<h2 id="defunciones-3ra-p%C3%A1gina">Defunciones (3ra Página)</h2>
+<ul>
+<li>Esta página da un promedio de edad para casos con defunción, agregar más estadísticos me parece importante, al menos su desviación estándar.</li>
+</ul>
+<h2 id="datos-por-derechohabiencia-4ta-p%C3%A1gina">Datos por Derechohabiencia (4ta Página)</h2>
+<ul>
+<li>
+<p>La distribución de casos por distritos de salud y derechohabiencia me parece muy relevante y útil.</p>
+</li>
+<li>
+<p>Se pueden formar indicadores a partir de síntomas previstos, esto se puede hacer directamente correlacionando datos pero me parece que sería mejor consultar un profesional de la salud.</p>
+</li>
+</ul>
+<h2 id="datos-por-municipio-5ta-p%C3%A1gina">Datos por Municipio (5ta Página)</h2>
+<ul>
+<li>
+<p>Una vez más creo que comparar la incidencia y letalidad con años anteriores con respecto a cada municipio podria ser muy útil.</p>
+</li>
+<li>
+<p>Incluso se podria ofrecer proyecciones básicas para cada municipio.</p>
+</li>
+<li>
+<p>También veo importante hacer seguimiento a campañas de salud en cada municipio para determinar su impacto.</p>
+</li>
+</ul>
+<h2 id="canal-end%C3%A9mico-6ta-p%C3%A1gina">Canal Endémico (6ta Página)</h2>
+<p>No encontre demasiada información acerca de la herramienta de &quot;Canal Endémico&quot;, sin embargo, encontre unos cuantos estudios que la utilizan, y un par que ahondan un poco más en ella, en particular parece que solo ciertos paises usan esta herramienta como método de monitoreo para enfermedades endémicas y poco a poco se ha ido popularizando.</p>
+<hr>
+<p>En el estudio por <a href="https://revistabiomedica.org/index.php/biomedica/article/view/2934">Hernández, et al. (2016)</a> se analiza la tendencia del dengue en el departamento de Valle de Cauca, Colombia y se habla un poco acerca de la metodología para realizar canales endémicos.</p>
+<blockquote>
+<p>El  canal  endémico  es  la  representación  gráfica del  número  de  casos  que  se  presentan  en  un área  en  períodos  definidos  (semana  o  periodo epidemiológico), comparado con los datos de años anteriores (usualmente, de cinco años).</br></br>Existen   diferentes   métodos   para   suavizar   la tendencia   observada   y   establecer   límites   de control:   el   método   de   promedios   móviles,   el de   suavización   exponencial,   y   métodos   más sofisticados  como  los  modelos  autorregresivos  y la metodología de Box-Jenkins.</p>
+</blockquote>
+<p>Desconozco el método que se utilizó para elaborar el canal endémico que aparece en el reporte pero considero relevante mencionar que los métodos de suavización utilizados afectan a los límites de control resultantes, en particular el estudio sugiere lo siguiente.</p>
+<blockquote>
+<p>Mientras  que  el  método  de  promedios  móviles se  ve  afectado  por  datos  extremos,  el  método de   suavización   exponencial   es   adecuado   en aquellos  casos  en  los  que  el  comportamiento  de los datos no tiene una tendencia ascendente o descendente.</p>
+</blockquote>
+<p>Considerando esto creo que se deben realizar pruebas para determinar que metodología utilizar para realizar un canal endémico en el caso de la FMRR, más aún, el estudio no utiliza los métodos que denomino &quot;más sofisticados&quot;, creo que seria importante caundo menos probar algún método de regresión y comparar sus resultados a los de los métodos tradicionales.</p>
+<hr>
+<p>Todo lo anterior es para el tema del suavizamiento de la tendencia observada y elaboración de límites de control, falta abordar el tema de que periodo histórico utilizar para calibrar la herramienta. Buscando más información al respecto, no encontre mucho acerca de la metodología para la elección del periodo, no obstante en el estudio por <a href="https://spaj.ukm.my/ijphr/index.php/ijphr/article/view/266">Norzaher Ismail, et al. (2020)</a> se construye un canal endémico para (una vez más) identificar el comienzo de una posible epidemia de Dengue en este caso en Negeri Sembilan, Malaisya.</p>
+<p>En este estudio se utilizó el método de promedios móviles para elaborar el canal endémico, lo que me parecio interesante es que utilizaron tres periodos historicos diferentes, uno de 5 años (como se indica en el estudio anterior), uno de tres años y uno de dos. El estudio menciona que esto es debido a que en los años recientes ha habido fuertes epidemias pero tambien esfuerzos por combatir la enfermedad, esto hace que los tres diagramas sean muy diferentes entre sí (se pueden observar en las páginas 1234 y 1235) los primeros dos resultaron ser muy poco confiables como indicadores de un posible resurgimiento ya que hubo epidemias y cambios en los criterios de diagnóstico durante esos años, el estudio continua utilizando el 3er canal endémico con un periodo histórico de 2 años.</p>
+<p>Si bien esto no arroja mucha luz en como se debe elegir este periodo, si evidencia que la elección del mismo es crucial para un funcionamiento fiable de la herramienta, considero importante probar diferentes periodos de historicidad y corroborar si no existieron brotes epidemicos fuertes, cambios en los criterios de diagnostico, casos faltantes en masa en los datos o cualquier otro problema que pueda causar que un periodo histórico se vuelva inválido.</p>
+<h2 id="medidas-preventivas-%C3%BAltima-p%C3%A1gina-del-reporte">Medidas Preventivas (Última página del reporte)</h2>
+<p>Si bien no veo de más recordar a cualquier persona que lea el reporte las medidas de prevención básicas contra la rickettsia, al mismo tiempo no lo veo muy relevante, creo que seria apropiado tal vez hacer un documento diferente donde se vean más a fondo estos métodos preventivos. Normalmente la persona que debe de conocer con claridad los métodos preventivos no es la misma que aquella que necesita el reporte.</p>
+
+</body>
+</html>
